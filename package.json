@@ -1,0 +1,33 @@
+{
+  "name": "medical-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "data:import" : "node backend/seederScript.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam910/Medical-Store.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivam910/Medical-Store/issues"
+  },
+  "homepage": "https://github.com/shivam910/Medical-Store#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10"
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
